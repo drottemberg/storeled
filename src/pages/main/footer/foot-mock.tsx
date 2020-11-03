@@ -1,6 +1,7 @@
 export const contactInfo = [
   "401 E 8TH Street, Suite 1716",
   "Sioux Falls, SD 57103",
+  "(774) 326-4361",
   "hello@storeled.com"
 ];
 
