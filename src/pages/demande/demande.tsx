@@ -148,14 +148,21 @@ export const Demande = () => {
     console.log(res)
   }
 
+
+
+  var myFormRef:React.RefObject<HTMLFormElement> = React.createRef();
+
   const sendQuote = (data: any) => {
     API.post(EndPoints.QUOTE, data).then(response => {
-      return response;
+      myFormRef.current!.reset();
+
+
+      alert("Thank you for requesting a quote, we will contact you within 2 business days.");
+
     })
     .catch(error => {
-      return error;
+      alert(error.message);
     });
-    return 'server error'
   }
 
   return (
@@ -210,7 +217,7 @@ export const Demande = () => {
               onSubmit={ onSubmit }
             >
           {({ errors, isSubmitting, touched, values, setFieldValue, handleSubmit }) => (
-            <Form style={{margin:'2em 0.5em 1em 0.5em'}} onSubmit = { handleSubmit } >
+            <Form style={{margin:'2em 0.5em 1em 0.5em'}} onSubmit = { handleSubmit } ref={myFormRef}>
               <Field type="text" name="commercialName" className="demande-input" placeholder="*Company name" required={true}/>
               <div className="demande-invalid-container">
                 { touched.commercialName && errors.commercialName ? <p className="demande-invalid-text">Please enter a valid input</p>: null}
