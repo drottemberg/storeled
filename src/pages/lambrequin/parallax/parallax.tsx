@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import './parallax.scss';
 
 export const Parallax = () => {
-  const image1 = "https://static.wixstatic.com/media/e49d9d_a53c503d8d9f41e1ac721bd434751735~mv2_d_6000_4000_s_4_2.jpg";
+  const image1 = "https://static.wixstatic.com/media/e49d9d_a53c503d8d9f41e1ac721bd434751735~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_609,h_430,al_c,q_85,usm_0.66_1.00_0.01/e49d9d_d4fe0feb3b3f4c63a10598969ea5838e~mv2.webp";
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
