@@ -300,7 +300,7 @@ export const Demande = () => {
 
               <Field type="text" name="site" className="demande-input" placeholder="Website"/>
 
-              {
+              {/*
                 file_arr.map( (item, index) => (
 
                   <div className="demande-file-container" key={`demande_file_${index}`}>
@@ -313,7 +313,7 @@ export const Demande = () => {
                   </div>
 
                 ))
-              }
+              */}
 
               <div className="demande-invalid-container"></div>
               <Button type="submit" variant='block' className="demande-submit">Send</Button>
