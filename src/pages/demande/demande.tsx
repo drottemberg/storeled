@@ -182,8 +182,8 @@ export const Demande = () => {
       delete data_quote[`couleur_texte${i}`];
       if(noSouhaitee > 0 && noSouhaitee >= i) valance.push(temp)
     }
-
-    data_quote['souhaitee_arr'] = valance //[...valance]
+    data_quote['souhaitee_arr'] = [...valance]
+    console.log(data_quote['souhaitee_arr'])
     const formData = new FormData();
 		Object.keys(data_quote).forEach( item => {
       formData.append(item, data_quote[item]);
@@ -192,6 +192,8 @@ export const Demande = () => {
     const res = sendQuote(formData);
   }
 
+  const myFormRef:React.RefObject<HTMLFormElement> = React.createRef();
+
   const sendQuote = (data: any) => {
     const config = {
       headers: {
@@ -199,9 +201,12 @@ export const Demande = () => {
         },
     }
     API.post(EndPoints.QUOTE, data, config).then(res => {
-        return res;
-    })
-    return 'server error'
+      myFormRef.current!.reset();
+      alert("Thank you for requesting a quote, we will contact you within 2 business days.");
+    })
+    .catch(error => {
+      alert(error.message);
+    });
   }
 
   return (
@@ -218,7 +223,7 @@ export const Demande = () => {
               onSubmit={ onSubmit }
             >
           {({ errors, isSubmitting, touched, values, setFieldValue, handleSubmit }) => (
-            <Form style={{margin:'2em 0.5em 1em 0.5em'}} onSubmit = { handleSubmit } >
+            <Form style={{margin:'2em 0.5em 1em 0.5em'}} onSubmit = { handleSubmit } ref={myFormRef}>
               <Field type="text" name="commercialName" className="demande-input" placeholder="*Company name" required={true}/>
               <div className="demande-invalid-container">
                 { touched.commercialName && errors.commercialName ? <p className="demande-invalid-text">Please enter a valid input</p>: null}
@@ -301,7 +306,7 @@ export const Demande = () => {
 
               <Field type="text" name="site" className="demande-input" placeholder="Website"/>
 
-              {
+              {/*
                 file_arr.map( (item, index) => (
 
                   <div className="demande-file-container" key={`demande_file_${index}`}>
@@ -317,7 +322,7 @@ export const Demande = () => {
                   </div>
 
                 ))
-              }
+              */}
 
               <div className="demande-invalid-container"></div>
               <Button type="submit" variant='block' className="demande-submit">Send</Button>

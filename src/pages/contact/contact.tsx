@@ -7,27 +7,28 @@ import EndPoints from 'utils/endpoints';
 
 import './contact.scss';
 
-const sendContact = (data: any) => {
-  const config = { }
-  API.post(EndPoints.CONTACT, data, config).then(res => {
-    return res;
-  })
-  return 'server error';
-};
-
 const SignupSchema = Yup.object().shape({
   name: Yup.string().required('Required'),
   email: Yup.string().email('Invalid email').required('Required'),
-  telephone: Yup.string().required('Required'),
+  phone: Yup.string().required('Required'),
   business:Yup.string().required('Required'),
   activity:Yup.string(),
   message:Yup.string().required('Required')
 });
 
 export const Contact = () => {
+
+  var myFormRef:React.RefObject<HTMLFormElement> = React.createRef();
+
   const onSubmit = (data: any) => {
-    const res = sendContact(data)
-    console.log(res)
+    const config = { }
+    API.post(EndPoints.CONTACT, data, config).then(res => {
+      myFormRef.current!.reset();
+      alert("Thank you for requesting a quote, we will contact you within 2 business days.");
+    })
+    .catch(error => {
+        alert(error.message);
+    });
   }
 
   return (
@@ -56,10 +57,10 @@ export const Contact = () => {
               onSubmit={ onSubmit }
             >
               {({ errors, touched, handleSubmit }) => (
-                <Form  onSubmit = { handleSubmit } >
+                <Form  onSubmit = { handleSubmit } ref={myFormRef}>
                   <Field name="name" className={touched.name && errors.name ? 'contact-form-input-invalid': 'contact-form-input'} placeholder="Name *" required={true}/>
                   <Field name="email" className={touched.email && errors.email ? 'contact-form-input-invalid': 'contact-form-input'} type="email" placeholder="Email *" required={true}/>
-                  <Field name="telephone" className={touched.telephone && errors.telephone ? 'contact-form-input-invalid': 'contact-form-input'} placeholder="Phone *" required={true}/>
+                  <Field name="phone" className={touched.telephone && errors.telephone ? 'contact-form-input-invalid': 'contact-form-input'} placeholder="Phone *" required={true}/>
                   <Field name="business" className={touched.business && errors.business ? 'contact-form-input-invalid': 'contact-form-input'} placeholder=" Business Name *" required={true}/>
                   <Field name="activity" className={touched.activity && errors.activity ? 'contact-form-input-invalid': 'contact-form-input'} placeholder="Activity / City" />
                   <Field component='textarea' rows="5" name="message" className={touched.message && errors.message ? 'contact-form-input-invalid': 'contact-form-input'} placeholder="Message *" required={true}/>

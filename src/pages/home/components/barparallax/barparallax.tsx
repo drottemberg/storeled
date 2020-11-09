@@ -11,12 +11,12 @@ export const BarParallax = () => {
     {
       text: 'When turned on, your luminous valance will highlight your sign, your logo, and your establishment, which will not escape the eye of passers-by',
       class: 'home-barparallax-bar',
-      image: 'https://static.wixstatic.com/media/e49d9d_12a9650996c542cda2f3c50f62e4b130~mv2_d_6016_4016_s_4_2.jpg'
+      image: 'https://static.wixstatic.com/media/e49d9d_12a9650996c542cda2f3c50f62e4b130~mv2_d_6016_4016_s_4_2.jpg/v1/fill/w_609,h_430,al_c,q_85,usm_0.66_1.00_0.01/e49d9d_d4fe0feb3b3f4c63a10598969ea5838e~mv2.webp'
     },
     {
       text:'Switched off, your luminous valance will remain original and attractive, and will in no way distort your awning, because it is perfectly integrated into it',
       class: 'home-barparallax-rest',
-      image:'https://static.wixstatic.com/media/e49d9d_3ac66eb9c38d4b7c88e97d451becf40d~mv2_d_6016_4016_s_4_2.jpg'
+      image:'https://static.wixstatic.com/media/e49d9d_3ac66eb9c38d4b7c88e97d451becf40d~mv2_d_6016_4016_s_4_2.jpg/v1/fill/w_609,h_430,al_c,q_85,usm_0.66_1.00_0.01/e49d9d_d4fe0feb3b3f4c63a10598969ea5838e~mv2.webp'
     }
 
   ]

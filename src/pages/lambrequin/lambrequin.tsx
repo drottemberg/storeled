@@ -9,12 +9,12 @@ import './lambrequin.scss';
 export const Lambrequin = () => {
   const history = useHistory();
   const images = [
-    "https://static.wixstatic.com/media/e49d9d_a53c503d8d9f41e1ac721bd434751735~mv2_d_6000_4000_s_4_2.jpg",
-    "https://static.wixstatic.com/media/e49d9d_d33a9f5f8b7649de8638af64aa0f7346~mv2_d_6016_4016_s_4_2.jpg",
-    "https://static.wixstatic.com/media/e49d9d_927e0c2d15d9496aa057f0752a523e1e~mv2_d_3264_2079_s_2.jpg",
-    "https://static.wixstatic.com/media/e49d9d_740f21b06bf64090b86c50e4261162ca~mv2_d_4924_2443_s_4_2.jpg",
-    "https://static.wixstatic.com/media/e49d9d_164e070d5e5e4cd9abebcc9141de6f66~mv2_d_3264_2448_s_4_2.jpg",
-    "https://static.wixstatic.com/media/e49d9d_4b55a5da2a8b48b1b054e2e79fa96814~mv2_d_5451_3639_s_4_2.jpg",
+    "https://static.wixstatic.com/media/e49d9d_a53c503d8d9f41e1ac721bd434751735~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_609,h_430,al_c,q_85,usm_0.66_1.00_0.01/e49d9d_d4fe0feb3b3f4c63a10598969ea5838e~mv2.webp",
+    "https://static.wixstatic.com/media/e49d9d_d33a9f5f8b7649de8638af64aa0f7346~mv2_d_6016_4016_s_4_2.jpg/v1/fill/w_609,h_430,al_c,q_85,usm_0.66_1.00_0.01/e49d9d_d4fe0feb3b3f4c63a10598969ea5838e~mv2.webp",
+    "https://static.wixstatic.com/media/e49d9d_927e0c2d15d9496aa057f0752a523e1e~mv2_d_3264_2079_s_2.jpg/v1/fill/w_609,h_430,al_c,q_85,usm_0.66_1.00_0.01/e49d9d_d4fe0feb3b3f4c63a10598969ea5838e~mv2.webp",
+    "https://static.wixstatic.com/media/e49d9d_740f21b06bf64090b86c50e4261162ca~mv2_d_4924_2443_s_4_2.jpg/v1/fill/w_609,h_430,al_c,q_85,usm_0.66_1.00_0.01/e49d9d_d4fe0feb3b3f4c63a10598969ea5838e~mv2.webp",
+    "https://static.wixstatic.com/media/e49d9d_164e070d5e5e4cd9abebcc9141de6f66~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_609,h_430,al_c,q_85,usm_0.66_1.00_0.01/e49d9d_d4fe0feb3b3f4c63a10598969ea5838e~mv2.webp",
+    "https://static.wixstatic.com/media/e49d9d_4b55a5da2a8b48b1b054e2e79fa96814~mv2_d_5451_3639_s_4_2.jpg/v1/fill/w_609,h_430,al_c,q_85,usm_0.66_1.00_0.01/e49d9d_d4fe0feb3b3f4c63a10598969ea5838e~mv2.webp",
   ]
 
   return (
