@@ -7,8 +7,6 @@ import EndPoints from 'utils/endpoints';
 
 import './contact.scss';
 
-
-
 const SignupSchema = Yup.object().shape({
   name: Yup.string().required('Required'),
   email: Yup.string().email('Invalid email').required('Required'),
@@ -23,15 +21,13 @@ export const Contact = () => {
   var myFormRef:React.RefObject<HTMLFormElement> = React.createRef();
 
   const onSubmit = (data: any) => {
-    API.post(EndPoints.CONTACT, data).then(response => {
+    const config = { }
+    API.post(EndPoints.CONTACT, data, config).then(res => {
       myFormRef.current!.reset();
-
-
-      alert("Thank you for contacting us, we will contact you within 2 business days.");
-
+      alert("Thank you for requesting a quote, we will contact you within 2 business days.");
     })
-    .catch(error => {
-      alert(error.message);
+    .catch(error => {
+        alert(error.message);
     });
   }
 

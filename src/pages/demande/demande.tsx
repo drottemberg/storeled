@@ -7,6 +7,46 @@ import API from 'utils/api';
 import EndPoints from 'utils/endpoints';
 import './demande.scss';
 
+const initData = {
+  commercialName: '',
+  name: '',
+  email: '',
+  telephone: '',
+  ville: '',
+  domaine: '',
+  services: '',
+  precisez: '',
+  no_souhaitee: 0,
+
+  color: '',
+  site: '',
+  file_logo: null,
+  file_photo1: null,
+  file_photo2: null,
+  file_photo3: null,
+
+  lumineux1: '',
+  longueur1: 0,
+  hauteur1: 0,
+  positionnement1: '',
+  texte_flocage1: '',
+  couleur_texte1: '',
+
+  lumineux2: '',
+  longueur2: 0,
+  hauteur2: 0,
+  positionnement2: '',
+  texte_flocage2: '',
+  couleur_texte2: '',
+
+  lumineux3: '',
+  longueur3: 0,
+  hauteur3: 0,
+  positionnement3: '',
+  texte_flocage3: '',
+  couleur_texte3: ''
+}
+
 const DemandeSchema = Yup.object().shape({
   commercialName: Yup.string().required('Required'),
   name: Yup.string().required('Required'),
@@ -142,27 +182,31 @@ export const Demande = () => {
       delete data_quote[`couleur_texte${i}`];
       if(noSouhaitee > 0 && noSouhaitee >= i) valance.push(temp)
     }
-
     data_quote['souhaitee_arr'] = [...valance]
-    const res = sendQuote(data_quote);
-    console.log(res)
+    console.log(data_quote['souhaitee_arr'])
+    const formData = new FormData();
+		Object.keys(data_quote).forEach( item => {
+      formData.append(item, data_quote[item]);
+    })
+    console.log(formData)
+    const res = sendQuote(formData);
   }
 
-
-
-  var myFormRef:React.RefObject<HTMLFormElement> = React.createRef();
+  const myFormRef:React.RefObject<HTMLFormElement> = React.createRef();
 
   const sendQuote = (data: any) => {
-    API.post(EndPoints.QUOTE, data).then(response => {
+    const config = {
+      headers: {
+        'content-type': 'multipart/form-data',
+        },
+    }
+    API.post(EndPoints.QUOTE, data, config).then(res => {
       myFormRef.current!.reset();
-
-
-      alert("Thank you for requesting a quote, we will contact you within 2 business days.");
-
-    })
-    .catch(error => {
-      alert(error.message);
-    });
+      alert("Thank you for requesting a quote, we will contact you within 2 business days.");
+    })
+    .catch(error => {
+      alert(error.message);
+    });
   }
 
   return (
@@ -174,45 +218,7 @@ export const Demande = () => {
           <Card.Text className="mb-2 text-muted">For any quote request, you can use the form below. Our team will get back to you as soon as possible.</Card.Text>
 
           <Formik
-              initialValues={{
-                commercialName: '',
-                name: '',
-                email: '',
-                telephone: '',
-                ville: '',
-                domaine: '',
-                services: '',
-                precisez: '',
-                no_souhaitee: 0,
-
-                color: '',
-                site: '',
-                file_logo: null,
-                file_photo1: null,
-                file_photo2: null,
-                file_photo3: null,
-
-                lumineux1: '',
-                longueur1: 0,
-                hauteur1: 0,
-                positionnement1: '',
-                texte_flocage1: '',
-                couleur_texte1: '',
-
-                lumineux2: '',
-                longueur2: 0,
-                hauteur2: 0,
-                positionnement2: '',
-                texte_flocage2: '',
-                couleur_texte2: '',
-
-                lumineux3: '',
-                longueur3: 0,
-                hauteur3: 0,
-                positionnement3: '',
-                texte_flocage3: '',
-                couleur_texte3: ''
-              }}
+              initialValues={initData}
               validationSchema={DemandeSchema}
               onSubmit={ onSubmit }
             >
@@ -309,7 +315,10 @@ export const Demande = () => {
                       {file_label_arr[index]}</Button>
                       <label>{file_name_state_arr[index]}</label>
                       <input type="file" style={{display:'none'}} ref={file_ref_arr[index]}
-                        onChange={(e:any)=>{setFieldValue(file_arr[index], e.currentTarget.files[0]); setStates(index, e.currentTarget.files[0].name)}}/>
+                        onChange={(e:any)=>{
+                          setFieldValue(file_arr[index], e.currentTarget.files[0]);
+                          setStates(index, e.currentTarget.files[0].name)}
+                        }/>
                   </div>
 
                 ))
