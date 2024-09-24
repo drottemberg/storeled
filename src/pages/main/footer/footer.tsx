@@ -81,7 +81,7 @@ export const Footer = () => {
     <hr className="divider-horizontal-dotted"></hr>
     <Container>
       <p className="footer-copyright-text">
-        Storeled &copy; 2020 - All rights reserved - Legal notice
+        Storeled &copy; 2024 - All rights reserved - Legal notice
 
       </p>
     </Container>

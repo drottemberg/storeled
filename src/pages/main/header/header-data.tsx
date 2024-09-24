@@ -36,7 +36,7 @@ export const header = [
     ]
   },*/
   {
-    name: 'Achievements',
+    name: 'Gallery',
     path: '/our-achievements',
     children: []
   },
