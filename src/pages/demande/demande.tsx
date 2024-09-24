@@ -141,11 +141,11 @@ export const Demande = () => {
           <label style={{marginLeft:'0.5em'}}><Field type="radio" name={`positionnement${i}`} value="right"/> Right</label><br/>
 
           <label className="demande-input">
-            {`Texte (flocage) n°${i}`}
+            {`Text (flocking) n°${i}`}
             <Field type="text" name={`texte_flocage${i}`} className="demande-input"/></label>
 
           <label className="demande-input">
-            {`Couleur du texte n°${i}`}
+            {`Text Color #${i}`}
             <Field type="text" name={`couleur_texte${i}`} className="demande-input"/></label>
 
           <div className="demande-invalid-container"></div>
