@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:3001'
+
+const baseUrl = "https://api.smartawnings.com";
 
 export default {
   post: (url:string, body: object, config: object) =>
