@@ -34,7 +34,7 @@ export const Contact = () => {
   return (
       <Container className="contact-container">
         <h1 className="contact-text-title">
-          Contact Store Led
+          Contact Smart Awnings
         </h1>
         <p className="contact-text-panel">
          Do you have a question about our services? <br/>

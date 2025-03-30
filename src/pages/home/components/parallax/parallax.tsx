@@ -47,10 +47,10 @@ export const Parallax = () => {
                 <img
                   style={{
                     width:'15em',
-                    height:'8em',
+                  
                     }}
                     alt="StoreledNOIR-2-pagepng_edited.png" data-type="image"
-                    src="https://static.wixstatic.com/media/e49d9d_2f69a5b64a9f454b8503fc6a75c44a8b~mv2.png/v1/fill/w_609,h_430,al_c,q_85,usm_0.66_1.00_0.01/e49d9d_d4fe0feb3b3f4c63a10598969ea5838e~mv2.webp"/>
+                    src="/assets/images/logo_white_glow.png"/>
           </div>
           <div className=''>
               <h2 className="home-font2">

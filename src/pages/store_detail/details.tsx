@@ -134,7 +134,7 @@ export const details: {[index: string]:any} = {
         ],
         title: 'Enseignes lumineuses',
         text1: "Une enseigne incontournable, entièrement faite sur mesure",
-        text2: "Store Led vous propose la réalisation de tous types d'enseignes lumineuses. Entièrement réalisée sur mesure, nous réalisation votre enseigne parmi une multitude d'éclairages possibles.<br/><br/>Nous nous adaptons aux contraintes de votre projet, aussi bien sur l'aspect esthétique que sur le rendu en terme de visibilité<br/><br/>Nos enseignes lumineuses sont conçus à partir d'équipements à faible consommation d'énergie, afin d'optimiser votre budget.<br/><br/>N'hésitez pas à nous contacter pour toute demande d'information sur nos enseignes."
+        text2: "Smart Awnings vous propose la réalisation de tous types d'enseignes lumineuses. Entièrement réalisée sur mesure, nous réalisation votre enseigne parmi une multitude d'éclairages possibles.<br/><br/>Nous nous adaptons aux contraintes de votre projet, aussi bien sur l'aspect esthétique que sur le rendu en terme de visibilité<br/><br/>Nos enseignes lumineuses sont conçus à partir d'équipements à faible consommation d'énergie, afin d'optimiser votre budget.<br/><br/>N'hésitez pas à nous contacter pour toute demande d'information sur nos enseignes."
     },
     'non-lumineuses':{
         root_url: '/enseigne',

@@ -33,7 +33,7 @@ export const PhotoGallery = () => (
   <div className="realisations-photogallery-section">
     <div className="realisations-photogallery-text">
       <div className="realisations-photogallery-text-title"><span>Our achievements</span></div>
-      <div className="realisations-photogallery-text-text"><span>Discover some of Store Led's achievements</span></div>
+      <div className="realisations-photogallery-text-text"><span>Discover some of Smart Awnings's achievements</span></div>
     </div>
     <div className="realisations-photogallery-gallery">
       <Gallery images={images} margin={10} rowHeight={240} backdropClosesModal={true} />

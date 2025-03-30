@@ -9,13 +9,13 @@ export const Enseigne = () => {
   return (
     <>
     <Container className="enseign__container">
-      <h1 style={{textAlign:'center', fontSize:'3em', color:'white', marginTop:'2em'}}>
-        Enseignes
-      </h1>
-      <p className='enseigne__title'>
-        Store Led vous propose un large choix d'enseignes, lumineuses ou traditionnelles. Nous vous accompagnerons dans le choix de vos éléments de communication, afin de respecter votre identité visuelle, tout en vous proposant des équipements de qualité, dans le respect des normes.
-      </p>
-    </Container>
+  <h1 style={{ textAlign: 'center', fontSize: '3em', color: 'white', marginTop: '2em' }}>
+    Signs
+  </h1>
+  <p className='enseigne__title'>
+    Smart Awnings offers a wide selection of signs, both illuminated and traditional. We will assist you in choosing your communication elements, ensuring they align with your visual identity while providing high-quality equipment that complies with standards.
+  </p>
+</Container>
     <Container>
       <Row>
         { enseignes.map( (item, ind) => (

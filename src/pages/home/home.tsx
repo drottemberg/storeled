@@ -9,7 +9,7 @@ export const Home = () => {
     <>
       <Parallax />
       <h2 className="home-font2">
-        <br/>Store Led<br/>
+        <br/>Smart Awnings<br/>
         luminous signs expert
       </h2>
       <p className="home-text1">

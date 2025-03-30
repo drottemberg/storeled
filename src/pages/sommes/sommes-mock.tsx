@@ -1,9 +1,9 @@
 export const sommesData = [
-  "Store Led est une société dynamique spécialisée dans la fabrication de lambrequins lumineux.",
-  "Jouissant d’un contrat d’exclusivité avec l’unique fabricant européen de feuille électro-luminescente, Store Led confectionne ses lambrequins lumineux ainsi que toutes ses autres déclinaisons à partir de cette technologie de pointe.",
-  "Pour ce faire, nous nous sommes installés au Cannet, dans un atelier de 200 m2, doté d’un showroom pour vous présenter l’étendue de notre savoir-faire. Nous vous y proposons une prise en charge globale dans la conception de vos supports de communication visuelle.",
-  "Notre accompagnement complet et personnalisé consiste en une mise à disposition des supports PAO. Sur demande, nous pouvons créer votre logo, en le déclinant sous toutes les formes : cartes de visites, flyers, affiches, panneaux publicitaires.",
-  "En effet, Store Led, ce n’est pas que du store !",
-  "Nous réalisons également des enseignes, de la vitrophanie, du covering de véhicule, ainsi que du flocage textiles. Tout ceci peut être réalisé en lumineux ou de façon traditionnelle.",
-  "Store Led propose donc une étude de chaque projet sur mesure."
-]
+  "Smart Awnings is a dynamic company specializing in the manufacturing of luminous valances.",
+  "With an exclusive contract with the only European manufacturer of electroluminescent sheets, Smart Awnings creates its luminous valances and all related variations using this cutting-edge technology.",
+  "To achieve this, we have set up our workshop in Le Cannet, in a 200 m² facility equipped with a showroom where we showcase the full extent of our expertise. There, we offer full support in designing your visual communication materials.",
+  "Our comprehensive and personalized service includes providing DTP (desktop publishing) assets. Upon request, we can create your logo and adapt it across all formats: business cards, flyers, posters, advertising panels.",
+  "Indeed, Smart Awnings is not just about awnings!",
+  "We also create signs, window graphics, vehicle wraps, and textile printing. All of these can be made with illumination or in a traditional format.",
+  "Smart Awnings provides a tailored study for each project."
+];

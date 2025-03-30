@@ -9,7 +9,7 @@ export const References = () => {
   return (
     <Container className="references-container">
       <p className="references-title">
-        Store Led : Our references
+      Smart Awnings: Our references
       </p>
       <Row>
         {

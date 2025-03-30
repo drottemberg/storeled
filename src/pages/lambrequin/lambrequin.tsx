@@ -35,7 +35,7 @@ export const Lambrequin = () => {
             <br/> <br/>
             We carry out a complete feasibility study upstream, in order to determine all the constraints of the project, and offer you the configuration of your luminous valances the most suited to your sign.
             <br/> <br/>
-            Store Led can also offer you traditional valance flocking, with special valance flex, or painting, on request.
+            Smart Awnings can also offer you traditional valance flocking, with special valance flex, or painting, on request.
             </p>
 
           </Col>

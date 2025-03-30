@@ -9,7 +9,7 @@ export const Sommes = () => {
     <Container className="sommes-container">
       <p className="sommes-title">Who are we?</p>
       <p className="sommes-title-des">
-        Store Led is a dynamic company specializing in the manufacture of luminous valances.
+      Smart Awnings is a dynamic company specializing in the manufacture of luminous valances.
       </p>
       {
         sommesData.map((item, ind) => (<p className="sommes-text-text" key={`sommes_item_${ind}`}>{ item }</p>))

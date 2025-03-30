@@ -17,7 +17,7 @@ export const Footer = () => {
               <img  className="footer-contact-img"
                 alt="StoreledNOIR-2-pagepng_edited.png"
                 data-type="image"
-                src="https://static.wixstatic.com/media/e49d9d_2f69a5b64a9f454b8503fc6a75c44a8b~mv2.png"/>
+                src="/assets/images/logo_white_glow.png"/>
               {
                 contactInfo.map((item, ind) => (
                   <div key={`footer_contact_${ind}`}>
@@ -53,13 +53,8 @@ export const Footer = () => {
                 Find us everywhere:
               </label>
               <div className='footer-social-img-section'>
-                <a href='https://www.facebook.com/storeled' style={{margin: '1em'}} target="_blank">
-                  <img className="footer-outsite-img"
-                  alt="Facebook Social Icône" data-type="image"
-                  style={{width: '39px', height: '39px'}}
-                  src="https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png"/>
-                </a>
-                <a href='https://www.instagram.com/store.led/' style={{margin: '1em'}} target="_blank">
+                
+                <a href='https://www.instagram.com/smart.awnings/' style={{margin: '1em'}} target="_blank">
                   <img className="footer-outsite-img"
                   alt="Facebook Social Icône" data-type="image"
                   style={{width: '39px', height: '39px'}}

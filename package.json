@@ -59,5 +59,8 @@
   "devDependencies": {
     "@types/query-string": "^6.3.0",
     "@types/webfontloader": "^1.6.32"
+  },
+  "volta": {
+    "node": "14.21.3"
   }
 }

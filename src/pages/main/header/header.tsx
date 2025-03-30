@@ -37,7 +37,7 @@ export const Header = () => {
         <img  className="header-img"
           alt="StoreledNOIR-2-pagepng_edited.png"
           data-type="image"
-          src="https://static.wixstatic.com/media/e49d9d_2f69a5b64a9f454b8503fc6a75c44a8b~mv2.png"/>
+          src="/assets/images/logo_white_glow.png"/>
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

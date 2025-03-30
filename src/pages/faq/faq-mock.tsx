@@ -1,22 +1,22 @@
 export const faqData = [
-    {
-      question: 'Est-ce que les lambrequins lumineux sont fiables ?',
-      answer: 'Nos lambrequins lumineux sont parmi les plus fiables du marché, car ils fonctionnent grâce à des feuilles électroluminescente, et non des ampoules LED. Ils sont très résistants aux intempéries et aux variations de température. Ils disposent de la norme Anti feu M1 et sont garantis 2 ans, pièces et main d\'oeuvre.'
-    },
-    {
-      question: 'Est-ce que les lambrequins lumineux consomment beaucoup d\'énergie ?',
-      answer: 'Les lambrequins lumineux Store Led ne consomment que très peu d\'énergie, car ils sont conçus avec des feuilles électroluminescentes, alimentées en 12 Volts, ce qui représente une consommation d\'énergie 5 fois moins importante qu\'un système à ampoules LED.'
-    },
-    {
-      question: 'A qui sont destinés les produits Store Led ?',
-      answer: 'L\'ensemble de nos produits sont destinés à tout le monde, particuliers comme professionnels. Pour les professionnels, Store Led vous propose également la possibilité de devenir partenaire revendeur. N\'hésitez pas à nous contacter pour plus d\'informations.'
-    },
-    {
-      question: 'Combien de temps faut-il pour recevoir mon lambrequin lumineux ?',
-      answer: 'Il faut compter environ 10 jours, à partir de la validation de votre commande. Nos lambrequins sont réalisés à la demande, et entièrement sur-mesure. Il s\'agit donc du délai de fabrication, et de livraison.'
-    },
-    {
-      question: 'Pourquoi choisir Store Led ?',
-      answer: 'Store Led propose des produits d\'une grande fiabilité, aux meilleurs tarifs du marché. Partenaire exclusif du seul fournisseur européen de feuille électroluminescente, nos produits sont fabriqués en France, et garantis 2 ans, pièce et main d\'oeuvre.'
-    }
-]
+  {
+    question: 'Are the luminous valances reliable?',
+    answer: 'Our luminous valances are among the most reliable on the market because they use electroluminescent sheets instead of LED bulbs. They are highly resistant to bad weather and temperature changes. They meet the M1 fire safety standard and come with a 2-year warranty, including parts and labor.'
+  },
+  {
+    question: 'Do the luminous valances consume a lot of energy?',
+    answer: 'Smart Awnings luminous valances consume very little energy, as they are designed with electroluminescent sheets powered by 12 volts, which results in energy consumption that is five times lower than a system using LED bulbs.'
+  },
+  {
+    question: 'Who are Smart Awnings products for?',
+    answer: 'All our products are intended for everyone — both individuals and professionals. For professionals, Smart Awnings also offers the opportunity to become a reseller partner. Feel free to contact us for more information.'
+  },
+  {
+    question: 'How long does it take to receive my luminous valance?',
+    answer: 'You should allow about 15 days from the time your order is confirmed. Our valances are made to order and fully custom-made. This timeframe includes both manufacturing and delivery.'
+  },
+  {
+    question: 'Why choose Smart Awnings?',
+    answer: 'Smart Awnings offers highly reliable products at the best prices on the market. As the exclusive partner of the only European supplier of electroluminescent sheets, our products are made in France and come with a 2-year warranty, including parts and labor.'
+  }
+];
