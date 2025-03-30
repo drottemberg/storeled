@@ -1,4 +1,4 @@
 export default {
-  QUOTE: '/quote',
-  CONTACT: '/email',
+  QUOTE: '/send-quote',
+  CONTACT: '/send-email',
 }
